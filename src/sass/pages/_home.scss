@@ -36,3 +36,14 @@
     }
   }
 }
+
+.introducing {
+  padding: 15px 0;
+
+  .heading-with-arrov {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+  }
+}
