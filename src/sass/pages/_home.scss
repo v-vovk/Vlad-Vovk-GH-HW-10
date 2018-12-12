@@ -46,4 +46,74 @@
     align-items: flex-end;
     box-sizing: border-box;
   }
+
+  .scrolling-wrapper {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      display: flex;
+      flex: 0 0 auto;
+      align-items: flex-end;
+      margin-right: 10px;
+      max-width: 370px;
+      width: 80%;
+      height: 370px;
+      background: $heading-color;
+
+      &:nth-child(1) {
+        background: $heading-color url('../img/john-smith.png') center center no-repeat;
+        background-size: auto;
+      }
+
+      &:nth-child(2) {
+        background: $heading-color url('../img/rendi.png') center center no-repeat;
+        background-size: cover;
+      }
+
+      &:nth-child(3) {
+        background: $heading-color url('../img/renes.png') center center no-repeat;
+        background-size: cover;
+      }
+
+      &__label {
+        width: 100%;
+        color: $light-color;
+        background-color: $accent-color;
+        padding: 20px 30px;
+
+        &__name {
+          font-family: $title-font;
+          font-size: 22px;
+          font-weight: 400;
+          margin: 0 0 5px;
+        }
+
+        &__instrument {
+          font-family: $grotesque-font;
+          font-size: 16px;
+          font-weight: 300;
+          margin: 0 0 15px;
+        }
+
+        &__social {
+          max-width: 200px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-family: $grotesque-font;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
 }
