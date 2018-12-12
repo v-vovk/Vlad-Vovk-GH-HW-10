@@ -1,0 +1,23 @@
+.button {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  background-color: $accent-color;
+  text-decoration: none;
+  padding: 20px 40px;
+  font-family: $grotesque-font;
+  color: $light-color;
+  font-size: 12px;
+  font-weight: 700;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 426px) {
+  .button {
+    width: auto;
+  }
+}
+
+
+
+
