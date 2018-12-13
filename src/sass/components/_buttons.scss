@@ -3,13 +3,16 @@
   border-radius: 30px;
   background-color: $accent-color;
   text-decoration: none;
+  text-transform: uppercase;
   padding: 20px 50px;
   font-family: $grotesque-font;
   color: $light-color;
   font-size: 12px;
   font-weight: 700;
+  text-align: center;
   width: 100%;
   box-sizing: border-box;
+  display: inline-block;
 }
 
 @media (min-width: 426px) {

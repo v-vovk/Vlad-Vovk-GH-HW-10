@@ -49,10 +49,12 @@
 
   .scrolling-wrapper {
     margin: 15px 0;
+    padding: 0 0 15px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    border-bottom: 1px solid $border-color;
 
     &::-webkit-scrollbar {
       display: none;
@@ -113,6 +115,78 @@
           font-size: 12px;
           font-weight: 400;
         }
+      }
+    }
+  }
+}
+
+.upcoming {
+  padding: 15px 0;
+
+  .concert {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0;
+
+    &__banner {
+      max-width: 270px;
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+      box-sizing: border-box;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      &__date {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        top: calc(50% - 42px);
+        left: calc(50% - 20px);
+        color: $light-color;
+        font-family: $title-font;
+
+        .number {
+          font-size: 45px;
+          font-weight: 700;
+        }
+
+        .day {
+          font-size: 30px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    &__description {
+      width: 100%;
+
+      &__title {
+        margin: 20px 0 10px;
+        color: $heading-color;
+        font-family: $title-font;
+        font-size: 18px;
+        font-weight: 400;
+        width: 100%;
+      }
+
+      &__items {
+        margin: 0 0 20px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .item {
+        color: $heading-color;
+        font-family: $grotesque-font;
+        font-size: 14px;
+        line-height: 2em;
+        font-weight: 400;
       }
     }
   }
