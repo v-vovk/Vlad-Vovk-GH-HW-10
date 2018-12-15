@@ -123,17 +123,42 @@
 .upcoming {
   padding: 15px 0;
 
+  .heading-with-arrov {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+  }
+
+  .scrolling {
+    margin: 15px 0;
+    padding: 0 0 15px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-bottom: 1px solid $border-color;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
   .concert {
     display: flex;
+    flex: 0 0 auto;
     flex-direction: column;
     align-items: flex-start;
-    margin: 15px 0;
+    max-width: 260px;
+    width: 100%;
+    margin: 15px 15px 0 0;
 
     &__banner {
       max-width: 270px;
       width: 100%;
       position: relative;
-      margin: 0 auto;
+      margin: 0;
       box-sizing: border-box;
 
       img {
@@ -190,4 +215,8 @@
       }
     }
   }
+}
+
+.latest {
+  width: 100%;
 }
