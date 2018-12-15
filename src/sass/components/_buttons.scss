@@ -13,6 +13,20 @@
   width: 100%;
   box-sizing: border-box;
   display: inline-block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &_invert {
+    color: $accent-color;
+    background-color: $light-color;
+
+    &:hover {
+      color: $light-color;
+      background-color: $accent-color;
+    }
+  }
 }
 
 @media (min-width: 426px) {

@@ -221,6 +221,37 @@
   width: 100%;
 }
 
+.our-founder {
+  background: $heading-color url('../img/ded.png') right top no-repeat;
+  margin: 15px 0;
+  padding: 80px 0;
+
+  .title {
+    color: $light-color;
+    font-family: $title-font;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .description {
+    color: $light-color;
+    font-family: $grotesque-font;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 20px;
+  }
+
+  .accent {
+    color: $light-color;
+    font-family: $cursive-font;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
 .popular-song {
 
   .player-list {
@@ -228,6 +259,7 @@
   }
 
   .items {
+    width: 100%;
     padding: 0;
     list-style-position: inside;
     -moz-column-count: 2; /* Firefox */
