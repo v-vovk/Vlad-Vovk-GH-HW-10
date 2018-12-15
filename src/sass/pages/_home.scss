@@ -220,3 +220,39 @@
 .latest {
   width: 100%;
 }
+
+.popular-song {
+
+  .player-list {
+    width: 100%;
+  }
+
+  .items {
+    padding: 0;
+    list-style-position: inside;
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-count: 2; /* Safari and Chrome */
+    column-count:1; //increase for other viewport
+    list-style-type: decimal-leading-zero;;
+    height: auto;
+    box-sizing: border-box;
+
+    li {
+      display: flex;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  .track {
+    display: list-item;
+    color: $heading-color;
+    font-family: $grotesque-font;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
