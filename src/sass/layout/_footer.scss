@@ -1,0 +1,47 @@
+footer {
+  width: 100%;
+  margin: 15px 0 0;
+
+  nav {
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-family: $grotesque-font;
+        color: $heading-color;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+
+  .copy-description {
+    color: $heading-color;
+    font-family: $grotesque-font;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .accent {
+    color: $heading-color;
+    font-family: $cursive-font;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
