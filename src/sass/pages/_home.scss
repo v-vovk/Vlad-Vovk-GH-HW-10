@@ -37,6 +37,20 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .lets-rock {
+      .heading {
+        &__title {
+          font-size: 116px;
+        }
+
+        &__sub-title {
+          font-size: 80px;
+        }
+      }
+  }
+}
+
 .introducing {
   padding: 15px 0;
 
@@ -70,7 +84,7 @@
       height: 370px;
       background: $heading-color;
 
-      &:nth-child(1) {
+      &:nth-child(1), &:nth-child(4) {
         background: $heading-color url('../img/john-smith.png') center center no-repeat;
         background-size: auto;
       }
@@ -260,6 +274,20 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .upcoming {
+    .concert__description__title {
+      font-size: 22px;
+    }
+
+    .concert__description__items {
+      .item {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 .latest {
   width: 100%;
 
@@ -280,6 +308,10 @@
       margin-right: 40px;
       padding: 0;
       max-width: 770px;
+
+      .pagination {
+        display: none;
+      }
     }
 
     .concert {
@@ -348,6 +380,23 @@
   .our-founder {
     .container {
       padding: 90px 100px;
+
+      .title {
+        font-size: 32px;
+      }
+
+      .description {
+        font-size: 22px;
+      }
+
+      .title, .description {
+        max-width: 560px;
+        width: 100%;
+      }
+
+      .accent {
+        font-size: 65px;
+      }
     }
   }
 }
@@ -519,6 +568,14 @@
 
     img {
       display: block;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .download {
+    .title {
+      font-size: 32px;
     }
   }
 }
