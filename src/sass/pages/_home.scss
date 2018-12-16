@@ -120,6 +120,31 @@
   }
 }
 
+@media (min-width: 600px) {
+  .introducing {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .introducing {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introducing {
+    padding: 100px 0;
+
+    .scrolling-wrapper {
+      .card {
+        width: 100%;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
 .upcoming {
   padding: 15px 0;
 
