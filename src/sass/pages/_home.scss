@@ -353,6 +353,10 @@
 }
 
 .popular-song {
+  iframe {
+    margin: 15px 0;
+  }
+
   .player-list {
     width: 100%;
   }
@@ -361,8 +365,8 @@
     width: 100%;
     padding: 0;
     list-style-position: inside;
-    -moz-column-count: 2; /* Firefox */
-    -webkit-column-count: 2; /* Safari and Chrome */
+    -moz-column-count: 1; /* Firefox */
+    -webkit-column-count: 1; /* Safari and Chrome */
     column-count:1; //increase for other viewport
     list-style-type: decimal-leading-zero;;
     height: auto;
@@ -388,14 +392,34 @@
   }
 }
 
-.insta-feed {
+@media (min-width: 600px) {
+  .popular-song {
+    .items {
+      -moz-column-count: 2; /* Firefox */
+      -webkit-column-count: 2; /* Safari and Chrome */
+      column-count:2; //increase for other viewport
+    }
+  }
+}
 
+@media (min-width: 768px) {
+  .popular-song {
+    .items {
+      -moz-column-count: 3; /* Firefox */
+      -webkit-column-count: 3; /* Safari and Chrome */
+      column-count:3; //increase for other viewport
+    }
+  }
+}
+
+.insta-feed {
   .insta-posts {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
+    margin: 15px 0;
 
     a {
       width: 45%;
@@ -410,6 +434,43 @@
     .post {
       width: 100%;
       display: block;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .song-with-insta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+
+    .popular-song {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .insta-feed {
+      max-width: 370px;
+      width: 100%;
+
+      .container {
+        padding-left: 0;
+      }
+
+      .insta-posts {
+        a {
+          max-width: 170px;
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
