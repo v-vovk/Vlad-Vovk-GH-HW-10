@@ -328,8 +328,31 @@
   }
 }
 
-.popular-song {
+@media (min-width: 600px) {
+  .our-founder {
+    .container {
+      padding: 70px 40px;
+    }
+  }
+}
 
+@media (min-width: 768px) {
+  .our-founder {
+    .container {
+      padding: 80px 80px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .our-founder {
+    .container {
+      padding: 90px 100px;
+    }
+  }
+}
+
+.popular-song {
   .player-list {
     width: 100%;
   }
