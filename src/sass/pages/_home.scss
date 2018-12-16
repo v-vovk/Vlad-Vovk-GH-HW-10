@@ -147,6 +147,7 @@
 
 .upcoming {
   padding: 15px 0;
+  width: 100%;
 
   .heading-with-arrov {
     display: flex;
@@ -242,8 +243,53 @@
   }
 }
 
+@media (min-width: 600px) {
+  .upcoming {
+    .scrolling {
+      .concert {
+        display: flex;
+        align-items: flex-start;
+        max-width: none;
+        flex-direction: row;
+
+        &__banner {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+}
+
 .latest {
   width: 100%;
+
+  iframe {
+    margin: 15px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .upcoming-latest {
+    .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .upcoming {
+      margin-right: 40px;
+      padding: 0;
+      max-width: 770px;
+    }
+
+    .concert {
+      margin: 0 15px 0 0;
+    }
+
+    .latest {
+      max-width: 370px;
+    }
+  }
 }
 
 .our-founder {
