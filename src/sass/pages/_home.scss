@@ -465,24 +465,30 @@
   .insta-posts {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     flex-wrap: wrap;
     margin: 15px 0;
 
     a {
-      width: 45%;
       box-sizing: border-box;
-      margin: 0 0 10px 0;
+      margin: 0 auto 10px;
     }
 
-    &:nth-child(1), &:nth-child(3) {
-      margin: 0 10px 10px 0;
-    }
+
 
     .post {
       width: 100%;
       display: block;
+
+      a {
+        max-width: 170px;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
