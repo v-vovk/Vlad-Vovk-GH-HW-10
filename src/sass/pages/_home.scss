@@ -116,19 +116,30 @@
           font-family: $grotesque-font;
           font-size: 16px;
           font-weight: 300;
-          margin: 0 0 15px;
+          margin: 0;
         }
 
         &__social {
+          display: none;
           max-width: 200px;
           width: 100%;
-          display: flex;
           justify-content: space-between;
           align-items: center;
           font-family: $grotesque-font;
           font-size: 12px;
           font-weight: 400;
         }
+
+        &:hover {
+          .card__label__instrument {
+            margin: 0 0 15px;
+          }
+
+          .card__label__social {
+            display: flex;
+          }
+        }
+
       }
     }
   }
