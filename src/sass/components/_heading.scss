@@ -20,4 +20,18 @@
     font-weight: 400;
     margin: 0;
   }
+
+  &__full-width {
+    .heading__title, .heading__sub-title {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .heading__full-width {
+    .heading__title, .heading__sub-title {
+      width: auto;
+    }
+  }
 }
